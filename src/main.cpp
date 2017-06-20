@@ -984,12 +984,12 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     }
     else if (pindexBest->nHeight+1 <= 320002)
     {
-      nSubsidy = 100000 * COIN;
+      nSubsidy = 3 * COIN;
       return nSubsidy + nFees;
     }
     else if (pindexBest->nHeight+1 <= LAST_POW_BLOCK)
     {
-      nSubsidy = 2927 * COIN;
+      nSubsidy = 3 * COIN;
       return nSubsidy + nFees;
     }
 
